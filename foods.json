@@ -1,0 +1,122 @@
+[
+  {
+    "id":1,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  {
+    "id":2,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+
+  {
+    "id":3,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+
+  {
+    "id":4,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  {
+    "id":5,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+
+  {
+    "id":6,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  {
+    "id":7,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  {
+    "id":8,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+
+  {
+    "id":9,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  
+  {
+    "id":10,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  {
+    "id":11,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+
+  {
+    "id":12,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  {
+    "id":13,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  {
+    "id":14,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+
+  {
+    "id":15,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  
+  {
+    "id":16,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+  {
+    "id":17,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  },
+
+  {
+    "id":18,
+    "name": "Asaro",
+    "price":5000,
+    "image":"../Images/Food/asaro.jpg.webp"
+  }
+
+
+
+]
