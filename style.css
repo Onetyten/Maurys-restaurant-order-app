@@ -9,15 +9,23 @@
 ::-webkit-scrollbar
  {height: 20px;}
 ::-webkit-scrollbar-track
-  {background:#212125;}
+  {background:var(--darkcolor);}
 ::-webkit-scrollbar-thumb
   {background:rgba(7, 65, 26,.5); border-radius: 10px;}
 input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
-  { margin:0px;color: #212125; opacity:1; mix-blend-mode:multiply;}
+  { margin:0px;color: var(--darkcolor); opacity:1; mix-blend-mode:multiply;}
+
+:root
+  {--lightcolor: #F7F39A;
+   --darkcolor:#212125;
+   --color1:#239d60;
+   --color2:#1a7a4a;
+   --color3:#2c533f;
+}
 
 
 .main-body
-  {background-color: #F7F39A;
+  {background-color: var(--lightcolor);
    background-image: url(./Images/heroSection/fourteen.jpg);
    background-blend-mode:hard-light
   }
@@ -27,7 +35,7 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
   {width: 200px;  margin:0px px; height: 100%; object-fit: contain;}
 
 .navigation
-  {background-color:#212125  ;
+  {background-color:var(--darkcolor)  ;
   width: 100%;
   height: 10vh;
   display: flex;
@@ -39,25 +47,30 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
 
 
 .navigation a
-  {text-decoration:none; color:#F7F39A; font-size: 17px; padding: 10px; border-radius: 10px; line-height: 90px; }
+  {text-decoration:none; color:var(--lightcolor); font-size: 17px; padding: 10px; border-radius: 10px; line-height: 90px; }
 
 .active,.navigation a:hover
-  {background-color:#239D60 ;transition: 0.5s;}
+  {background-color:var(--color1) ;transition: 0.5s;}
 
 
 .nav-right
   {display: flex;}
+
 .navigation ul li
   {display: inline-block; margin: 0px 15px; list-style: none;}
+.navigation button
+  {display: inline-block; margin: 25px 6px; list-style: none; font-size: 17px; color: var(--lightcolor); background:none; border: none; padding: 8px; }
+.navigation button:hover
+  {background-color: var(--color1); padding: 8px; border-radius: 8px; transition: 0.3s;}
 
 .toggle-button
-  {font-size:25px; text-align: center; color: #F7F39A; display:none;}
+  {font-size:25px; text-align: center; color:var(--lightcolor); display:none;}
 
 
 .drop-down
   {text-align: center;
-   background-color: #212125;
-   color: #F7F39A;
+   background-color: var(--darkcolor);
+   color: var(--lightcolor);
    opacity: .9;
    width: 100%;
    height: 0px;
@@ -78,14 +91,14 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom:2px solid #F7F39A;
+    border-bottom:2px solid var(--lightcolor);
     
   }
 .drop-down a
-  {text-decoration:none; color:#F7F39A; font-size: 17px; padding: 10px; border-radius: 10px; line-height: 50px; backdrop-filter: blur(15px); transition: font-size 0.5s linear;}
+  {text-decoration:none; color:var(--lightcolor); font-size: 17px; padding: 5px; border-radius: 10px; line-height: 40px; backdrop-filter: blur(15px); transition: font-size 0.5s linear;}
 
 .drop-down a:hover
-  {text-decoration:underline; color:#239D60; font-size: 23px;}
+  {text-decoration:underline; color:var(--lightcolor); font-size: 23px;}
 
 .hero-scroller img
   {height :80vh; width: 100%; object-fit:cover;}
@@ -115,7 +128,7 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
 
 
 .manual-btn
-  {border: 4px solid #239D60;
+  {border: 4px solid var(--color1);
    padding:10px ;
    border-radius: 10px;
    cursor: pointer;
@@ -125,10 +138,10 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
   {margin-right: 20px;}
 
 .manual-btn:hover
-  {background-color: #F7F39A;}
+  {background-color: var(--lightcolor);}
 
 .active-slide
-  {background-color: #F7F39A;}
+  {background-color: var(--lightcolor);}
 
 #radio1:checked ~ .first
   {
@@ -172,7 +185,7 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
   }
 
 .auto-nav div
-  {border: 4px solid #239D60;
+  {border: 4px solid var(--color1);
     padding:10px ;
     border-radius: 10px;
     cursor: pointer;
@@ -187,34 +200,34 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
 
 #radio1:checked ~ .auto-nav .auto-btn1
   {
-    background: #F7F39A;
+    background: var(--lightcolor);
   }
 #radio2:checked ~ .auto-nav .auto-btn2
   {
-    background: #F7F39A;
+    background: var(--lightcolor);
   }
 #radio3:checked ~ .auto-nav .auto-btn3
   {
-    background: #F7F39A;
+    background: var(--lightcolor);
   }
 #radio4:checked ~ .auto-nav .auto-btn4
   {
-    background: #F7F39A;
+    background: var(--lightcolor);
   }
 #radio5:checked ~ .auto-nav .auto-btn5
   {
-    background: #F7F39A;
+    background: var(--lightcolor);
   } 
 #radio6:checked ~ .auto-nav .auto-btn6
   {
-    background: #F7F39A;
+    background: var(--lightcolor);
   }
 .head-text 
   {position: absolute;
    width: 50%;
   top: 30vh;
   margin-left: 5%;
-  color: #F7F39A;
+  color: var(--lightcolor);
   animation: text-anim 3s cubic-bezier(0.215, 0.610, 0.355, 1);}
 
 
@@ -231,21 +244,21 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
       width: 100%;
       justify-content: space-evenly;
       align-items: center;
-      background-color: #239D60;
+      background-color: var(--color1);
       height: 10vh;
       
     }
 .switch-tab a
     {font-size: 20px;
     text-decoration: none;
-    color: #F7F39A;
+    color: var(--lightcolor);
     flex: 1;
     padding: 4vh 0px;
     text-align: center;
-    border-left: 3px solid #212125;}
+    border-left: 3px solid var(--darkcolor);}
 
 .active-tab
-      {background-color: #1a7a4a;}
+      {background-color: var(--color2);}
 
 .section-head
     {display: flex;
@@ -255,29 +268,37 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
 
 .section-head p
     {padding: 3vh;
-     background-color: #239D60;
+     background-color: var(--color1);
      width: 50%;
      z-index: 0;
      font-size: 20px;
-     border-top: 3px solid #212125;
-     color: #F7F39A;}
+     border-top: 3px solid var(--darkcolor);
+     color: var(--lightcolor);}
 .page
     {height: 100vh;}
 
 .seat-parent1
     {display: flex; flex-wrap: wrap; height:43vh;justify-content: center; align-items: center;overflow-x: hidden;}
 .seat
-    {padding:5%; font-size: 65px; background-color:#d7d7d7 ; margin: 10px; border: 6px solid #212125; color: #F7F39A; font-weight: 600;}
+    {padding:5%; font-size: 65px; background-color:#d7d7d7 ; margin: 10px; border: 6px solid var(--darkcolor); color: var(--lightcolor); font-weight: 600;}
 .seat a
-    {text-decoration: none; color: #F7F39A;}
+    {text-decoration: none; color: var(--lightcolor); width: 30px; height: 100%;}
 .seat-parent2
     {display: flex; flex-wrap: wrap; height:25vh;justify-content: center; align-items: center;}
 .seat-parent2 p
-    {background-image:url(./Images/other/ExecutiveSeat.jpg); background-size: cover; background-color: #239D60; background-blend-mode: multiply;}
+    {background-image:url(./Images/other/ExecutiveSeat.jpg); background-size: cover; background-color: var(--color1); background-blend-mode: multiply;}
+.seat-parent2 button
+    {background-image:url(./Images/other/ExecutiveSeat.jpg); background-size: cover; background-color: var(--color1); background-blend-mode: multiply;}
+.seat-parent2 button:hover
+    {background-image:url(./Images/other/ExecutiveSeat.jpg); background-size: cover; background-color: var(--color3); background-blend-mode: multiply;}
 .seat-parent1 p
-    {background-image:url(./Images/other/PremiumSeat.jpg); background-size: cover; background-color: #239D60; background-blend-mode: multiply;}
+    {background-image:url(./Images/other/PremiumSeat.jpg); background-size: cover; background-color: var(--color1); background-blend-mode: multiply;}
+.seat-parent1 button
+    {background-image:url(./Images/other/PremiumSeat.jpg); background-size: cover; background-color: var(--color1); background-blend-mode: multiply;}
+.seat-parent1 button:hover
+    {background-image:url(./Images/other/PremiumSeat.jpg); background-size: cover; background-color: var(--color3); background-blend-mode: multiply;}
 .footer
-    {background-color: #212125; border-top:8px solid #239D60; height: 100vh;color: #F7F39A;padding-left: 40px; overflow: hidden;}
+    {background-color: var(--darkcolor); border-top:8px solid var(--color1); height: 100vh;color: var(--lightcolor);padding-left: 40px; overflow: hidden;}
 .footer h2
     {font-size: 20px; padding: 15px 0px;}
 .footer p
@@ -285,18 +306,18 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
 .ordered-seat
     {background-color: #f51818;border: 8px solid #490d0d;  }
 .delivered-seat
-    {background-color: #239D60;border: 8px solid #0d4931; }
+    {background-color: var(--color1);border: 8px solid var(--color3); }
 .login-parent
     {display: flex; align-items: center; justify-content: center;}
 
 /* order page style */
 
 .order-body
-    {background-color: #F7F39A;
+    {background-color: var(--lightcolor);
       background-image: url(./Images/heroSection/fourteen.jpg);
       background-blend-mode:darken;}
 .order-body2
-    {background-color: #F7F39A;}   
+    {background-color: var(--lightcolor);}   
 
 .order-parent-container
     {display: flex; flex-wrap: nowrap; align-items: center;}
@@ -305,13 +326,13 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
 .order-order-tab
     {width: 100%; display: flex;justify-content: space-evenly; align-items: center; }
 .odtab-container
-    {background-color: #212125; border-radius: 20px; overflow: auto;border: 3px solid #239D60; display: flex;justify-content: space-evenly; width: 50%; height: 200px; margin-bottom: 100px; align-items: center; color: #F7F39A;}
+    {background-color: var(--darkcolor); border-radius: 20px; overflow: auto;border: 3px solid var(--color1); display: flex;justify-content: space-evenly; width: 50%; height: 200px; margin-bottom: 100px; align-items: center; color: var(--lightcolor);}
 .subtotal-price
     {font-size: 20px;}
 .odtab-container button
-    {background-color: #239D60; padding: 15px; border-radius:5px;transition: 0.5s;border: none; color: #F7F39A; font-size: 20px; }
+    {background-color: var(--color1); padding: 15px; border-radius:5px;transition: 0.5s;border: none; color: var(--lightcolor); font-size: 20px; }
 .odtab-container button:hover
-    {background-color: #0d4931;}
+    {background-color: var(--color3);}
 .order-hero
     {height: 40vh;}
 .manual-anchor
@@ -327,26 +348,26 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
        justify-content: center;
       }
 .order-tabs
-    {display: flex; justify-content: space-around; background-color: #1a7a4a; border: 3px solid #212125; height: 70px; align-items: center;}
+    {display: flex; justify-content: space-around; background-color: var(--color2); border: 3px solid var(--darkcolor); height: 70px; align-items: center;}
 .order-tabs a
-    {text-decoration: none; color: #F7F39A; font-size: 20px;}
+    {text-decoration: none; color: var(--lightcolor); font-size: 20px;}
 .active-order
-    {background-color: #0d4931; padding: 12px; border-radius:5px;}
+    {background-color: var(--color3); padding: 12px; border-radius:5px;}
 .tab-link:hover
-    {background-color: #0d4931; padding: 12px; border-radius:5px;transition: 0.5s;}
+    {background-color: var(--color3); padding: 12px; border-radius:5px;transition: 0.5s;}
 .food-row
     {display: flex; align-items: center; justify-content: space-evenly; flex-direction: row; flex-wrap: wrap;}
 .food-head p
-    {background-color: #239D60; border: 3px solid #212125; height: 70px;font-size: 30px; color: #F7F39A; text-align: center; width: 200px;padding-top: 8px;}
+    {background-color: var(--color1); border: 3px solid var(--darkcolor); height: 70px;font-size: 30px; color: var(--lightcolor); text-align: center; width: 200px;padding-top: 8px;}
 .food-head-title
     {display: flex; justify-content: center; align-items: center;}
 .food-selection
-  {display: grid; align-items: center; color: #F7F39A; width: 350px;  background-color: #239D60;justify-content: center; border-radius: 20px;
+  {display: grid; align-items: center; color: var(--lightcolor); width: 350px;  background-color: var(--color1);justify-content: center; border-radius: 20px;
   padding: 20px; margin:50px 0px;}
 .food-selection img
   {height: 300px; width: 300px; border-radius: 20px;}
 .food-selection h3
-  {text-align: left; display: inline; font-size: 22px; color: #F7F39A; padding: 15px 0px;}
+  {text-align: left; display: inline; font-size: 22px; color: var(--lightcolor); padding: 15px 0px;}
 .food-selection p
   {font-size: 20px;}
 .food-info
@@ -354,14 +375,14 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
 .food-info p
   {margin-right: 20px; display: block; font-size: 20px; margin-bottom:10px;}
 .food-info button
-  {background-color: #0d4931; padding: 15px; border-radius:5px;transition: 0.5s;border: none; color: #F7F39A; font-size: 20px;}
+  {background-color: var(--color3); padding: 15px; border-radius:5px;transition: 0.5s;border: none; color: var(--lightcolor); font-size: 20px;}
 
 .food-info input[type = "number"]
   {
     width: 50px;
     margin-bottom:10px;
     font-size: 20px;
-    color: #F7F39A;
+    color: var(--lightcolor);
     background-color: #2dc479;
     text-align: center;
     display: block;
@@ -400,7 +421,7 @@ input[type = "checkbox"]:hover
   }
 input[type = "checkbox"]:checked
   {
-    background-color: #1ecf74;;
+    background-color: #1ecf74;
     
     
   }
@@ -412,10 +433,10 @@ input[type = "checkbox"]:checked:after
   }
 .chef-order-container
   {display: flex; justify-content: center; flex-direction: column;
-    align-items: center; background-color: #212125; border:5px solid #1a7a4a; width: 90%; margin:30px auto; padding: 20px;}
+    align-items: center; background-color: var(--darkcolor); border:5px solid var(--color2); width: 90%; margin:30px auto; padding: 20px;}
 
 .chef-order
-  {display: flex; width:90%; justify-content:space-between; background-color: #1a7a4a; align-items: center;border-radius: 20px;margin: 20px 0px; font-size: 20px; color: #F7F39A;}
+  {display: flex; width:90%; justify-content:space-between; background-color: var(--color2); align-items: center;border-radius: 20px;margin: 20px 0px; font-size: 20px; color: var(--lightcolor);}
   
 .chef-order img
   {
@@ -424,7 +445,7 @@ input[type = "checkbox"]:checked:after
 
 .chef-order button
   {
-    font-size: 20px; padding: 10px; background-color: #212125; margin-right: 30px; color: #F7F39A; border: 1px solid #F7F39A;
+    font-size: 20px; padding: 10px; background-color: var(--darkcolor); margin-right: 30px; color: var(--lightcolor); border: 1px solid var(--lightcolor);
   }
 .hidden-div
   {
@@ -433,12 +454,12 @@ input[type = "checkbox"]:checked:after
 
 #cancel-order
   {
-    font-size: 20px; padding: 10px; background-color: #212125; margin-right: 30px; color: #F7F39A; border: 1px solid #F7F39A; border-radius: 0px;
+    font-size: 20px; padding: 10px; background-color: var(--darkcolor); margin-right: 30px; color: var(--lightcolor); border: 1px solid var(--lightcolor); border-radius: 0px;
   }
 
 /* login page */
 .login-main-body
-  {background-color: #F7F39A;}
+  {background-color: var(--lightcolor);}
 .top-nav
   {
     display: flex;
@@ -462,7 +483,7 @@ input[type = "checkbox"]:checked:after
   { margin-right: 20px; width: 100%; object-fit: cover; border-radius: 100px; margin-left: 20px; z-index: 2;}
 .divider
   {
-    height:50px; background-color: #1a7a4a; border: 4px solid #212125;
+    height:50px; background-color: var(--color2); border: 4px solid var(--darkcolor);
   }
 .login-parent
   {display: grid; align-items:start; justify-content:left; width: 100%; row-gap: 5px;}
@@ -479,7 +500,7 @@ input[type = "checkbox"]:checked:after
   {display: block;color: #0c4f2e; margin-bottom: 5px;}
 .login-parent input
   {
-    height: 40px; width: 100%; border: none; border-radius: 5px; color:#F7F39A ; background-color: #1ecf74; font-size: 17px; padding-left: 40px;
+    height: 40px; width: 100%; border: none; border-radius: 5px; color:var(--lightcolor) ; background-color: #1ecf74; font-size: 17px; padding-left: 40px;
   }
 .login-seat
   {
@@ -487,15 +508,15 @@ input[type = "checkbox"]:checked:after
   }
 
 .right-side
-  {margin-left: 10%; border:2px solid #212125; padding:10px 10%; border-radius: 50px; animation: input-right 1s cubic-bezier(0.215, 0.610, 0.355, 1); }
+  {margin-left: 10%; border:2px solid var(--darkcolor); padding:10px 10%; border-radius: 50px; animation: input-right 1s cubic-bezier(0.215, 0.610, 0.355, 1); }
 
 input[type = "radio"]
   {width: 15px;}
 .login-parent button
   { margin: 10px auto;
-    background-color: #239D60;
+    background-color: var(--color1);
     border: none;
-    color: #F7F39A;
+    color: var(--lightcolor);
     text-align: center;
    padding:10px ;
    border-radius: 10px;
@@ -518,6 +539,52 @@ input[type = "radio"]
   {height: 640px;}
 .disabled-link
   {pointer-events: none;}
+
+.theme-bar
+  {position:absolute;
+   top:70px;
+   right: 0px;
+   background-color: rgba(33, 33, 37,0.5);
+   padding: 20px;
+   transition: 1s;
+
+  }
+
+.ddtheme-bar
+  {position:absolute;
+    top:320px;
+    z-index: 2;
+    right: 250px;}
+.close-bar
+  {height: 0px;
+    display: none;}
+
+.theme-head
+  {
+    color: var(--lightcolor); font-size: 20px;
+  }
+
+.theme-button
+  {position: relative;}
+
+
+.bar-line
+  {display: grid;}
+.bar-line label
+  {
+    display: inline; width: 150px; color: var(--lightcolor); font-size: 20px;
+  }
+.bar-line input
+  {
+    display: inline; margin-left: 20px;
+  }
+.bar-sec
+  {display: flex;}
+/* .theme-head
+  {margin:100px auto 10px auto; } */
+
+
+
 
 
   @keyframes input-right
@@ -597,6 +664,33 @@ input[type = "radio"]
 
 }
 
+@media(max-width:500px)
+  {
+    .odtab-container
+    { width: 100%;}
+  .subtotal-price
+    {font-size: 20px;}
+.odtab-container button
+    {padding: 10px;  font-size: 20px; }
+
+
+.chef-order-container
+  {display: flex; justify-content: center; flex-direction: column; border:5px solid var(--color2); width: 100%; margin:30px auto; padding: 0px;}
+
+.chef-order
+  {display: flex; width:100%; justify-content:space-between;  align-items: center;border-radius: 20px;margin: 20px 0px; font-size: 15px; color: var(--lightcolor);}
+  
+.chef-order img
+  {
+    width: 50px; border-radius: 50px; height: 50px; margin: 10px 5px; 
+  } 
+
+.chef-order button
+  {
+    font-size: 15px; padding: 5px;  margin-right: 10px; border: 1px solid var(--lightcolor);
+  }
+  }
+
 @media(max-width:300px){
   .footer h2
     {font-size: 15px; padding: 3px 0px;}
@@ -604,7 +698,7 @@ input[type = "radio"]
     {font-size: 6px; margin-top: 2px; padding: 0px 20px;}
   
   .seat
-  {padding:5%; font-size: 30px; margin: 10px; border: 3px solid #212125; font-weight: 600;}
+  {padding:5%; font-size: 30px; margin: 10px; border: 3px solid var(--darkcolor); font-weight: 600;}
 
 }
 @media (max-height:850)
@@ -620,7 +714,12 @@ input[type = "radio"]
   }
 @media (max-height:650)
   {
-
+  .odtab-container
+    { width: 100%;}
+  .subtotal-price
+    {font-size: 15px;}
+.odtab-container button
+    {padding: 10px;  font-size: 15px; }
   .footer h2
     {font-size: 10px; padding: 5px 0px;}
   .footer p
@@ -630,6 +729,55 @@ input[type = "radio"]
 
   }
 
+.nature
+  {--lightcolor: #F7F39A;
+   --darkcolor:#212125;
+   --color1:#239d60;
+   --color2:#1a7a4a;
+   --color3:#2c533f;
+}
+
+.vintage
+  {--lightcolor:#edd1bf;
+   --darkcolor:#494642;
+   --color1:#766c5a;
+   --color2:#9a8e7b;
+   --color3:#69635f;
+}
+
+.minimalist
+  {--lightcolor: #f8f8f8;
+   --darkcolor:#292929;
+   --color1:#999999;
+   --color2:#787878;
+   --color3:#525252;
+}
+
+.spring
+  {--lightcolor:#FBFFE2 ;
+   --darkcolor:#3a313b;
+   --color1:#ba7a7a;
+   --color2:#8b6558;
+   --color3:#857545;
+}
+
+.food
+  {--lightcolor:#ECE3CE ;
+   --darkcolor:#3A4D39;
+   --color1:#739072;
+   --color2: #4F6F52;
+   --color3:#3b5b51;
+}
+
+
+
+.kids
+  {--lightcolor: #E6FFFD;
+   --darkcolor:#3f3c45;
+   --color1:#708aa8;
+   --color2:#474a61;
+   --color3:#354644;
+}
 
 
 
@@ -659,34 +807,5 @@ input[type = "radio"]
 
 
 
-/* 
-nature
-212125
-239D60
-A3DE83
-F7F39A */
-/* 
-vintage
-776B5D
-B0A695
-EBE3D5
-F3EEEA */
-/* 
-spring
-440047
-FFAFAF
-FBFFE2
-FFEBCC */
-
-/* food
-3A4D39
-4F6F52
-739072
-ECE3CE */
 
 
-/* kids
-B799FF
-ACBCFF
-AEE2FF
-E6FFFD */

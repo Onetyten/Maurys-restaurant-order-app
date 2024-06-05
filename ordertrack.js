@@ -1,3 +1,21 @@
+let tableNum = "P1"
+let tableTitle = document.getElementsByClassName("order-head-text")[0]
+
+
+const tableName = localStorage.getItem("selectedTable")
+if (tableName)
+  {tableNum = tableName
+  console.log('clicked table name: ',tableNum,);
+  tableTitle.innerText += " "+tableNum}
+
+
+  
+
+
+
+
+
+
 loading()
 if (document.readyState==="loading")
   {
@@ -23,8 +41,6 @@ function loading()
          console.log("i said loaded")
         }
     }
-
-  
 
 
 
@@ -59,24 +75,227 @@ function ready()
 
    
   }
+
+
+// function saveStorage()
+//   {
+//     let storage = document.getElementsByClassName("stored-div")[0]
+//     localStorage.removeItem("chefDiv")
+//     localStorage.setItem("chefDiv", storage.innerHTML);
+//     console.log(localStorage.getItem("chefDiv"))
+//     updateFoodPrice()
+//   }
+
 function saveStorage()
   {
+    // let tableNum = "P1"
     let storage = document.getElementsByClassName("stored-div")[0]
-    localStorage.clear()
-    localStorage.setItem("chefDiv", storage.innerHTML);
-    console.log(localStorage.getItem("chefDiv"))
+
+    if(tableNum == "P1")
+      {
+        localStorage.removeItem("chefDiv1")
+        localStorage.setItem("chefDiv1", storage.innerHTML);
+        console.log(localStorage.getItem("chefDiv1"))
+      }
+
+    else if(tableNum == "P2")
+      {
+        localStorage.removeItem("chefDiv2")
+        localStorage.setItem("chefDiv2", storage.innerHTML);
+        console.log(localStorage.getItem("chefDiv2"))
+      }
+
+    else if(tableNum == "P3")
+      {
+        localStorage.removeItem("chefDiv3")
+        localStorage.setItem("chefDiv3", storage.innerHTML);
+        console.log(localStorage.getItem("chefDiv3"))
+      }
+
+    else if(tableNum == "P4")
+      {
+        localStorage.removeItem("chefDiv4")
+        localStorage.setItem("chefDiv4", storage.innerHTML);
+        console.log(localStorage.getItem("chefDiv4"))
+      }
+
+    else if(tableNum == "P5")
+      {
+        localStorage.removeItem("chefDiv5")
+        localStorage.setItem("chefDiv5", storage.innerHTML);
+        console.log(localStorage.getItem("chefDiv5"))
+      }
+
+    else if(tableNum == "P6")
+      {
+        localStorage.removeItem("chefDiv6")
+        localStorage.setItem("chefDiv6", storage.innerHTML);
+        console.log(localStorage.getItem("chefDiv6"))
+      }
+            
+    else if(tableNum == "E1")
+    {
+      localStorage.removeItem("chefDiv7")
+      localStorage.setItem("chefDiv7", storage.innerHTML);
+      console.log(localStorage.getItem("chefDiv7"))
+    }
+          
+    else if(tableNum == "E2")
+      {
+        localStorage.removeItem("chefDiv8")
+        localStorage.setItem("chefDiv8", storage.innerHTML);
+        console.log(localStorage.getItem("chefDiv8"))
+      }
+            
+    else if(tableNum == "E3")
+    {
+      localStorage.removeItem("chefDiv9")
+      localStorage.setItem("chefDiv9", storage.innerHTML);
+      console.log(localStorage.getItem("chefDiv9"))
+    }
+    else
+    {
+      localStorage.removeItem("chefDiv")
+      localStorage.setItem("chefDiv", storage.innerHTML);
+      console.log(localStorage.getItem("chefDiv"))
+    }
+
+
+
     updateFoodPrice()
   }
+
+
+
+
+
+
+
+
+
+
 
 function loadStorage()
   {
     let storage = document.getElementsByClassName("stored-div")[0];
-    let savedOrderContainerContent = localStorage.getItem("chefDiv");
-    if (savedOrderContainerContent) 
-    { localStorage.clear()
-      console.log(savedOrderContainerContent)
-      storage.innerHTML = savedOrderContainerContent;
+    let savedOrderContainerContent1 = localStorage.getItem("chefDiv1");
+    let savedOrderContainerContent2 = localStorage.getItem("chefDiv2");
+    let savedOrderContainerContent3 = localStorage.getItem("chefDiv3");
+    let savedOrderContainerContent4 = localStorage.getItem("chefDiv4");
+    let savedOrderContainerContent5 = localStorage.getItem("chefDiv5");
+    let savedOrderContainerContent6 = localStorage.getItem("chefDiv6");
+    let savedOrderContainerContent7 = localStorage.getItem("chefDiv7");
+    let savedOrderContainerContent8 = localStorage.getItem("chefDiv8");
+    let savedOrderContainerContent9 = localStorage.getItem("chefDiv9");
+    let savedOrderContainerContent0 = localStorage.getItem("chefDiv");
+
+    if(tableNum == "P1")
+      {
+        if (savedOrderContainerContent1) 
+          { 
+            // localStorage.removeItem("chefDiv1")
+            console.log(savedOrderContainerContent1)
+            storage.innerHTML = savedOrderContainerContent1;
+          }
+      }
+      
+    else if(tableNum == "P2")
+    {
+      if (savedOrderContainerContent2) 
+        { 
+          // localStorage.removeItem("chefDiv2")
+          console.log(savedOrderContainerContent2)
+          storage.innerHTML = savedOrderContainerContent2;
+        }
     }
+  
+    
+    else if(tableNum == "P3")
+      {
+        if (savedOrderContainerContent3) 
+          { 
+            // localStorage.removeItem("chefDiv3")
+            console.log(savedOrderContainerContent3)
+            storage.innerHTML = savedOrderContainerContent3;
+          }
+      }
+    
+      
+    else if(tableNum == "P4")
+    {
+      if (savedOrderContainerContent4) 
+        { 
+          console.log(savedOrderContainerContent4)
+          storage.innerHTML = savedOrderContainerContent4;
+        }
+    }
+  
+    
+    else if(tableNum == "P5")
+      {
+        if (savedOrderContainerContent5) 
+          { 
+            console.log(savedOrderContainerContent5)
+            storage.innerHTML = savedOrderContainerContent5;
+          }
+      }
+    
+      
+    else if(tableNum == "P6")
+    {
+      if (savedOrderContainerContent6) 
+        { 
+          console.log(savedOrderContainerContent6)
+          storage.innerHTML = savedOrderContainerContent6;
+        }
+    }
+  
+    else if(tableNum == "E1")
+    {
+      if (savedOrderContainerContent7) 
+        { 
+          console.log(savedOrderContainerContent7)
+          storage.innerHTML = savedOrderContainerContent7;
+        }
+    }
+      
+    else if(tableNum == "E2")
+    {
+      if (savedOrderContainerContent8) 
+        { 
+          console.log(savedOrderContainerContent8)
+          storage.innerHTML = savedOrderContainerContent8;
+        }
+    }
+      
+    else if(tableNum == "E3")
+    {
+      if (savedOrderContainerContent9) 
+        { 
+          console.log(savedOrderContainerContent9)
+          storage.innerHTML = savedOrderContainerContent9;
+        }
+    }
+
+    else
+    {
+      if (savedOrderContainerContent0) 
+        { 
+          console.log(savedOrderContainerContent0)
+          storage.innerHTML = savedOrderContainerContent0;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
   }
