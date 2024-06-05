@@ -27,7 +27,7 @@ form.addEventListener('submit', (e) => {
     let dataStore = JSON.stringify(obj)
     localStorage.removeItem("Data")
     localStorage.setItem("Data",dataStore)
-    window.location.href = "../Pages/login_page.html"
+    window.location.href = "../login_page.html"
 })
 
 

@@ -6,19 +6,99 @@
   <title>Document</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<body class="main-body">
-  <section class="hero">
+<body >
+  <div class="main-body">
+    <section class="hero">
     
-    <div class="navigation">
-      <img src="../Images/logo.png" alt="" class="img-logo">
-      <div class="nav-left">
-        
+      <div class="navigation">
+        <img src="../Images/logo.png" alt="" class="img-logo">
+        <div class="nav-left">
+          
+        </div>
+  
+        <div class="nav-right">
+          <ul>
+            <li>
+              <a href="" class="active">Home</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="">About</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="">Review</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <button id="theme-but">
+                Themes
+              </button>
+            </li>
+          </ul>
+  
+        </div>
+  
+  
+  
+      
+  
+        <div class="toggle-button">
+          <i class="fas fa-bars">
+            
+          </i>
+        </div>
+  
       </div>
-
-      <div class="nav-right">
+  
+      <div class="theme-bar close-bar">
+  
+        <form action="" class="bar-line" >
+  
+          <div class="bar-sec">
+            <label for="theme">Nature</label>
+            <input name="theme" id="nature" checked type="radio">
+          </div>
+  
+          <div class="bar-sec">
+            <label for="theme">Vintage</label>
+            <input name="theme" id="vintage"  type="radio" >
+          </div>
+  
+          <div class="bar-sec">
+            <label for="theme">Minimalist</label>
+            <input name="theme" id="minimalist" type="radio">
+          </div>
+          <div class="bar-sec">
+            <label for="theme">Spring</label>
+            <input name="theme" id="spring" type="radio">
+          </div>
+  
+          <div class="bar-sec">
+            <label for="theme">Food</label>
+            <input name="theme" id="food" type="radio">
+          </div>
+  
+          <div class="bar-sec">
+            <label for="theme">kids</label>
+            <input name="theme" id="kids" type="radio">
+          </div>
+  
+  
+  
+        </form>
+   
+  
+  
+      </div>
+  
+      <div class="drop-down">
         <ul>
           <li>
-            <a href="" class="active">Home</a>
+            <a href="">Home</a>
           </li>
         </ul>
         <ul>
@@ -31,284 +111,207 @@
             <a href="">Review</a>
           </li>
         </ul>
-        <ul>
-          <li>
-            <button id="theme-but">
-              Themes
-            </button>
-          </li>
-        </ul>
-
       </div>
-
-
-
-    
-
-      <div class="toggle-button">
-        <i class="fas fa-bars">
+     
+  
+      <div class="hero-scroller">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <input type="radio" name="radio-btn" id="radio5">
+          <input type="radio" name="radio-btn" id="radio6">
+  
+  
+          <div class="slide first">
+            <img src="../Images/heroSection/one.jpg">
+          </div>
+  
+          <div class="slide second">
+            <img src="../Images/heroSection/two.jpg">
+          </div>
+  
+          <div class="slide third"> 
+            <img src="../Images/heroSection/three.jpg">
+          </div>
+  
+          <div class="slide fourth">
+            <img src="../Images/heroSection/fourteen.jpg">
+          </div>
+  
+          <div class="slide fifth">
+            <img src="../Images/heroSection/six.jpg">
+          </div>
+  
+          <div class="slide sixth">
+            <img src="../Images/heroSection/fifteen.jpg">
+          </div>
+          <div class="head-text">
+            <h2>
+              Savour the flavour
+            </h2>
+            <p>
+              Every bite is a symphony of FLAVOUR
+            </p>
+          </div>
+          <div class="auto-nav">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+            <div class="auto-btn6"></div>
+          </div>
           
-        </i>
+        </div>
+  
+        <div class="manual-nav">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+          <label for="radio6" class="manual-btn"></label>
+        </div>
+  
       </div>
-
-    </div>
-
-    <div class="theme-bar close-bar">
-
-      <form action="" class="bar-line" >
-
-        <div class="bar-sec">
-          <label for="theme">Nature</label>
-          <input name="theme" id="nature" checked type="radio">
-        </div>
-
-        <div class="bar-sec">
-          <label for="theme">Vintage</label>
-          <input name="theme" id="vintage"  type="radio" >
-        </div>
-
-        <div class="bar-sec">
-          <label for="theme">Minimalist</label>
-          <input name="theme" id="minimalist" type="radio">
-        </div>
-        <div class="bar-sec">
-          <label for="theme">Spring</label>
-          <input name="theme" id="spring" type="radio">
-        </div>
-
-        <div class="bar-sec">
-          <label for="theme">Food</label>
-          <input name="theme" id="food" type="radio">
-        </div>
-
-        <div class="bar-sec">
-          <label for="theme">kids</label>
-          <input name="theme" id="kids" type="radio">
-        </div>
-
-
-
-      </form>
- 
-
-
-    </div>
-
-    <div class="drop-down">
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="">About</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="">Review</a>
-        </li>
-      </ul>
-    </div>
-   
-
-    <div class="hero-scroller">
-      <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <input type="radio" name="radio-btn" id="radio5">
-        <input type="radio" name="radio-btn" id="radio6">
-
-
-        <div class="slide first">
-          <img src="../Images/heroSection/one.jpg">
-        </div>
-
-        <div class="slide second">
-          <img src="../Images/heroSection/two.jpg">
-        </div>
-
-        <div class="slide third"> 
-          <img src="../Images/heroSection/three.jpg">
-        </div>
-
-        <div class="slide fourth">
-          <img src="../Images/heroSection/fourteen.jpg">
-        </div>
-
-        <div class="slide fifth">
-          <img src="../Images/heroSection/six.jpg">
-        </div>
-
-        <div class="slide sixth">
-          <img src="../Images/heroSection/fifteen.jpg">
-        </div>
-        <div class="head-text">
-          <h2>
-            Savour the flavour
-          </h2>
-          <p>
-            Every bite is a symphony of FLAVOUR
-          </p>
-        </div>
-        <div class="auto-nav">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-          <div class="auto-btn5"></div>
-          <div class="auto-btn6"></div>
-        </div>
-        
+  
+      <div class="switch-tab">
+        <a href="#" class="active-tab">Patron</a>
+        <a href="./Chef_page.html" class="other-tab">Steward</a>
       </div>
-
-      <div class="manual-nav">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-        <label for="radio5" class="manual-btn"></label>
-        <label for="radio6" class="manual-btn"></label>
-      </div>
-
-    </div>
-
-    <div class="switch-tab">
-      <a href="#" class="active-tab">Patron</a>
-      <a href="./Chef_page.html" class="other-tab">Steward</a>
-    </div>
-    
-
-  </section>
-
-
-
-
-  <section class="page">
-    <div class="section-head">
-      <p>
-        Premium tables
-      </p>
-    </div>
-
-    <div class="seat-parent1">
       
-        <button class="seat" class="table-tag" id="p1">
+  
+    </section>
+  
+  
+  
+  
+    <section class="page">
+      <div class="section-head">
+        <p>
+          Premium tables
+        </p>
+      </div>
+  
+      <div class="seat-parent1">
+        
+          <button class="seat" class="table-tag" id="p1">
+            1
+          </button>
+     
+          <button class="seat" class="table-tag" id="p2">
+            2
+          </button>
+  
+          <button class="seat" class="table-tag"  id="p3">
+            3
+          </button>
+  
+          <button class="seat" class="table-tag"  id="p4">
+            4
+          </button>
+  
+          <button class="seat" class="table-tag"  id="p5">
+            5
+          </button>
+  
+          <button class="seat" class="table-tag"  id="p6">
+            6
+          </button>
+  
+      </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="section-head">
+        <p>
+          Executive Tables
+        </p>
+      </div>
+      <div class="seat-parent2">
+        <button class="seat" class="table-tag"  id="e1">
           1
         </button>
-   
-        <button class="seat" class="table-tag" id="p2">
+  
+        <button class="seat" class="table-tag"  id="e2">
           2
         </button>
-
-        <button class="seat" class="table-tag"  id="p3">
+  
+        <button class="seat" class="table-tag" id="e3">
           3
         </button>
-
-        <button class="seat" class="table-tag"  id="p4">
-          4
-        </button>
-
-        <button class="seat" class="table-tag"  id="p5">
-          5
-        </button>
-
-        <button class="seat" class="table-tag"  id="p6">
-          6
-        </button>
-
-    </div>
-
-
-
-
-
-
-
-
-
-    <div class="section-head">
-      <p>
-        Executive Tables
-      </p>
-    </div>
-    <div class="seat-parent2">
-      <button class="seat" class="table-tag"  id="e1">
-        1
-      </button>
-
-      <button class="seat" class="table-tag"  id="e2">
-        2
-      </button>
-
-      <button class="seat" class="table-tag" id="e3">
-        3
-      </button>
-
-    </div>
-    
-  </section>
-
-
-
-
   
-  <section class="footer">
-    <h2>
-      Company Name
-    </h2>
-    <p>
-      Maury Flavour Haven Inc.
-    </p>
-    <h2>
-      Products
-    </h2>
-    <p>
-      Maury Flavour Haven Catering Services.
-    </p>
-    <p>
-      Maury Flavour Haven Spice Blends.
-    </p>
-    <p>
-      Maury Flavour Haven Cookbook.
-    </p>
-    <p>
-      Maury Flavour Haven Cooking Classes
-    </p>
-
-    <h2>
-      Community
-    </h2>
-    <p>
-      Facebook
-    </p>
-    <p>
-      Instagram
-    </p>
-
-    <p>
-      Maury's Blog
-    </p>
-
-    <h2>
-      Contact
-    </h2>
-    <p>
-      Phone number: +2349166373736 ,+2348145681036
-    </p>
-    <p>
-      International phone number: +44 646468872
-    </p>
-    <p>
-      Email: culinary@mauryflavourhaven.com, chefmaury@mauryflavourhaven.com;
+      </div>
+      
+    </section>
+  
+  
+  
+  
+    
+    <section class="footer">
+      <h2>
+        Company Name
+      </h2>
+      <p>
+        Maury Flavour Haven Inc.
       </p>
-    <p>
-      Maury's Blog
-    </p>
-  </section>
+      <h2>
+        Products
+      </h2>
+      <p>
+        Maury Flavour Haven Catering Services.
+      </p>
+      <p>
+        Maury Flavour Haven Spice Blends.
+      </p>
+      <p>
+        Maury Flavour Haven Cookbook.
+      </p>
+      <p>
+        Maury Flavour Haven Cooking Classes
+      </p>
+  
+      <h2>
+        Community
+      </h2>
+      <p>
+        Facebook
+      </p>
+      <p>
+        Instagram
+      </p>
+  
+      <p>
+        Maury's Blog
+      </p>
+  
+      <h2>
+        Contact
+      </h2>
+      <p>
+        Phone number: +2349166373736 ,+2348145681036
+      </p>
+      <p>
+        International phone number: +44 646468872
+      </p>
+      <p>
+        Email: culinary@mauryflavourhaven.com, chefmaury@mauryflavourhaven.com;
+        </p>
+      <p>
+        Maury's Blog
+      </p>
+    </section>
+  </div>
+  
   <script src="../script.js">
   </script>
   <script src="../table_manager.js"></script>
