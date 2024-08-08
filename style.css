@@ -16,11 +16,13 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
   { margin:0px;color: var(--darkcolor); opacity:1; mix-blend-mode:multiply;}
 
 :root
-  {--lightcolor: #F7F39A;
-   --darkcolor:#212125;
-   --color1:#239d60;
-   --color2:#1a7a4a;
-   --color3:#2c533f;
+  {
+    --lightcolor:#edd1bf;
+   --darkcolor:#494642;
+   --color1:#766c5a;
+   --color2:#9a8e7b;
+   --color3:#69635f;
+   
 }
 
 
@@ -730,11 +732,11 @@ input[type = "radio"]
   }
 
 .nature
-  {--lightcolor: #F7F39A;
+  { --lightcolor: #F7F39A;
    --darkcolor:#212125;
    --color1:#239d60;
    --color2:#1a7a4a;
-   --color3:#2c533f;
+   --color3:#2c533f; 
 }
 
 .vintage
