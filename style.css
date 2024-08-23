@@ -34,7 +34,7 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
 
 
 .img-logo
-  {width: 200px;  margin:0px px; height: 100%; object-fit: contain;}
+  {width: 100px;  margin:0px;  object-fit: contain;}
 
 .navigation
   {background-color:var(--darkcolor)  ;
@@ -312,14 +312,20 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
 .login-parent
     {display: flex; align-items: center; justify-content: center;}
 
+
+    
 /* order page style */
+.login-main-body
+    {
+      min-height: 100vh ;background-color: var(--lightcolor);
+    }
 
 .order-body
     {background-color: var(--lightcolor);
       background-image: url(./Images/heroSection/fourteen.jpg);
       background-blend-mode:darken;}
 .order-body2
-    {background-color: var(--lightcolor);}   
+    {background-color: var(--lightcolor);min-height: 100vh;}   
 
 .order-parent-container
     {display: flex; flex-wrap: nowrap; align-items: center;}
@@ -385,7 +391,7 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
     margin-bottom:10px;
     font-size: 20px;
     color: var(--lightcolor);
-    background-color: #2dc479;
+    background-color: var(--color2);
     text-align: center;
     display: block;
   }
@@ -461,7 +467,7 @@ input[type = "checkbox"]:checked:after
 
 /* login page */
 .login-main-body
-  {background-color: var(--lightcolor);}
+  {background-color: var(--lightcolor);  height: 100vh}
 .top-nav
   {
     display: flex;
@@ -471,7 +477,7 @@ input[type = "checkbox"]:checked:after
   }
 .top-nav img
   {
-    width: 200px; border-radius:250px; padding-top: 10px; margin-left: 50px;
+    width: 100px; border-radius:250px; padding-top: 10px; margin-left: 50px;
   }
  .login-body
   {
@@ -502,7 +508,7 @@ input[type = "checkbox"]:checked:after
   {display: block;color: #0c4f2e; margin-bottom: 5px;}
 .login-parent input
   {
-    height: 40px; width: 100%; border: none; border-radius: 5px; color:var(--lightcolor) ; background-color: #1ecf74; font-size: 17px; padding-left: 40px;
+    height: 40px; width: 100%; border: none; border-radius: 5px; color:var(--lightcolor) ; background-color: var(--color2); font-size: 17px; padding-left: 40px;
   }
 .login-seat
   {
@@ -514,6 +520,14 @@ input[type = "checkbox"]:checked:after
 
 input[type = "radio"]
   {width: 15px;}
+.login-but:hover
+{
+  background-color: var(--color3)
+}
+.Order-btn
+  {
+    background-color: var(--darkcolor);
+  }
 .login-parent button
   { margin: 10px auto;
     background-color: var(--color1);
@@ -569,7 +583,6 @@ input[type = "radio"]
 .theme-button
   {position: relative;}
 
-
 .bar-line
   {display: grid;}
 .bar-line label
@@ -582,6 +595,9 @@ input[type = "radio"]
   }
 .bar-sec
   {display: flex;}
+
+body
+  {background-color: var(--lightcolor);}
 /* .theme-head
   {margin:100px auto 10px auto; } */
 
